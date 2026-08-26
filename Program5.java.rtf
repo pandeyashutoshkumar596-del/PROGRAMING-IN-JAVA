@@ -1,38 +1,25 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2869
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
-\f0\fs24 \cf0 //WRITE A JAVA PROGRAM TO GET A DIFFERENT VALUES FROM USER AT RUNTIME USING SCANNER.\
-\
-import java.util.Scanner;\
-\
-	class prog5\{\
-			\
-			public static void main(String[] args)\{\
-			Scanner scn = new Scanner(System.in);\
-			\
-			System.out.print("enter your name:");\
-			String name = scn.nextLine();\
-			\
-			System.out.print("enter your age:");\
-			int age = scn.nextInt();\
-			\
-			System.out.print("enter your percentage:");\
-			float percentage = scn.nextFloat();\
-			\
-			System.out.print("enter you gender:");\
-			 char gender = scn.next().charAt(0);\
-			 \
-			 System.out.println("your entered name is:" + name);\
-			 System.out.println("your entered age is :" + age);\
-			 System.out.println("your entered percentage is:" + percentage);\
-			 System.out.println("your entered gender is :" + gender);\
-			 \
-			\
-			\
-			\}\
-			\
-	\}}
+//WRITE A JAVA PROGRAM TO PERFORM DIFFERENT ARITHMETIC OPERATION WITHOUT COMMAND LINE ARGS
+
+import java.util.Scanner;
+
+ class prog4_1{
+		
+		public static void main(String[] args){
+		Scanner scn = new Scanner(System.in);
+		
+		System.out.print("enter your first value:");
+		int a = scn.nextInt();
+
+		System.out.print("enter your second value:");
+		int b = scn.nextInt();
+		
+ 		System.out.println("your addition value is:" + (a+b));
+		System.out.println("your subtraction value is:" +(a-b));
+		System.out.println("your multiplication value is:" + (a*b));
+		System.out.println("your division value is:" +(a/b));
+		System.out.println("your modulus value is:" + (a%b));
+		
+		
+		}
+ }
